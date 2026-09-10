@@ -1,45 +1,45 @@
-# 🧮 Calculadora de Taxa Metabólica Basal
+# 🧮 Basal Metabolic Rate Calculator
 
-Aplicação desktop desenvolvida em **Java** utilizando **Java Swing**, criada para calcular a **Taxa Metabólica Basal (TMB)** de uma pessoa a partir de informações como peso, altura, idade e gênero.
+A **desktop application developed in Java using Java Swing**, created to calculate a person's **Basal Metabolic Rate (BMR)** based on information such as weight, height, age, and gender.
 
-O projeto foi desenvolvido com foco em praticar **Programação Orientada a Objetos (POO)**, criação de interfaces gráficas e organização do código em diferentes responsabilidades.
-
----
-
-## 📌 Sobre o projeto
-
-A **Taxa Metabólica Basal (TMB)** representa uma estimativa da quantidade de energia que o organismo necessita diariamente para manter suas funções básicas em repouso.
-
-A aplicação permite inserir os dados do usuário e realizar o cálculo automaticamente, apresentando o resultado em **kcal/dia**.
-
-### ✨ Funcionalidades
-
-* ⚖️ Entrada do peso
-* 📏 Entrada da altura
-* 🎂 Entrada da idade
-* ⚧️ Seleção do gênero
-* 🧮 Cálculo automático da TMB
-* ✅ Validação dos dados inseridos
-* ⚠️ Mensagem de erro para valores inválidos
-* 🖥️ Interface gráfica utilizando Java Swing
-* 📊 Exibição do resultado em kcal/dia
+The project was developed with a focus on practicing **Object-Oriented Programming (OOP)**, graphical user interface development, and code organization through separation of responsibilities.
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 📌 About the Project
+
+The **Basal Metabolic Rate (BMR)** represents an estimate of the amount of energy the body requires each day to maintain its basic functions while at rest.
+
+The application allows users to enter their information and automatically calculate their BMR, displaying the result in **kcal/day**.
+
+### ✨ Features
+
+* ⚖️ Weight input
+* 📏 Height input
+* 🎂 Age input
+* ⚧️ Gender selection
+* 🧮 Automatic BMR calculation
+* ✅ Input data validation
+* ⚠️ Error messages for invalid values
+* 🖥️ Graphical user interface built with Java Swing
+* 📊 BMR result displayed in kcal/day
+
+---
+
+## 🛠️ Technologies Used
 
 * **Java**
 * **Java Swing**
-* **Programação Orientada a Objetos (POO)**
+* **Object-Oriented Programming (OOP)**
 * **IntelliJ IDEA**
 * **JAR**
-* **JPackage** para geração do executável
+* **JPackage** for generating the executable
 
 ---
 
-## 📂 Estrutura do projeto
+## 📂 Project Structure
 
-O projeto possui uma organização baseada na separação das responsabilidades:
+The project follows an organization based on separation of responsibilities:
 
 ```text
 src/
@@ -56,69 +56,69 @@ src/
         └── MainWindow.java
 ```
 
-### 📄 Principais classes
+### 📄 Main Classes
 
 **`Main.java`**
 
-Responsável por iniciar a aplicação e criar a janela principal utilizando a fila de eventos do Swing.
+Responsible for starting the application and creating the main window using the Swing Event Dispatch Thread.
 
 **`CalculatorBmr.java`**
 
-Contém a lógica responsável pelo cálculo da Taxa Metabólica Basal de acordo com os dados informados.
+Contains the logic responsible for calculating the Basal Metabolic Rate based on the provided data.
 
 **`Validator.java`**
 
-Responsável por verificar se os valores inseridos nos campos são números válidos e maiores que zero.
+Responsible for checking whether the values entered into the fields are valid numbers greater than zero.
 
 **`MainWindow.java`**
 
-Responsável pela interface gráfica da aplicação, recebendo os dados do usuário, acionando o cálculo e exibindo o resultado.
+Responsible for the application's graphical interface, receiving user input, triggering the calculation, and displaying the result.
 
 ---
 
-## 🖥️ Interface
+## 🖥️ User Interface
 
-A aplicação possui uma interface simples e objetiva, contendo campos para:
+The application features a simple and straightforward interface with fields for:
 
 ```text
-Peso
-Altura
-Idade
-Gênero
+Weight
+Height
+Age
+Gender
 
-[ Calcular ]
+[ Calculate ]
 
-Resultado: XX.XX kcal/dia
+Result: XX.XX kcal/day
 ```
 
-O objetivo é facilitar a utilização e manter a aplicação direta, sem elementos desnecessários.
+The goal is to provide an easy-to-use experience while keeping the application clean and free of unnecessary elements.
 
 ---
 
-## 🚀 Como executar
+## 🚀 How to Run
 
-### Opção 1 — Executar pelo IntelliJ IDEA
+### Option 1 — Run with IntelliJ IDEA
 
-1. Clone este repositório:
+1. Clone this repository:
 
 ```bash
 git clone https://github.com/SEU-USUARIO/basalMetabolicRate.git
 ```
 
-2. Abra o projeto no **IntelliJ IDEA**.
-3. Localize:
+2. Open the project in **IntelliJ IDEA**.
+3. Navigate to:
 
 ```text
 src/BMR/Main.java
 ```
 
-4. Execute a classe `Main.java`.
+4. Run the `Main.java` class.
 
 ---
 
-### Opção 2 — Executar o arquivo JAR
+### Option 2 — Run the JAR File
 
-Caso o Java esteja instalado na máquina, também é possível executar a versão compilada:
+If Java is installed on your computer, you can also run the compiled version:
 
 ```bash
 java -jar CalculadoraTMB.jar
@@ -126,54 +126,54 @@ java -jar CalculadoraTMB.jar
 
 ---
 
-### Opção 3 — Executável Windows
+### Option 3 — Windows Executable
 
-O projeto também possui uma versão executável para Windows:
+The project also includes a Windows executable version:
 
 ```text
 CalculadoraTMB.exe
 ```
 
-Basta executar o arquivo para iniciar a aplicação.
+Simply run the file to launch the application.
 
 ---
 
-## 🧠 Conceitos praticados
+## 🧠 Concepts Practiced
 
-Durante o desenvolvimento foram utilizados conceitos importantes de desenvolvimento de software, como:
+Throughout the development of this project, several important software development concepts were applied, including:
 
-* Programação Orientada a Objetos
-* Separação de responsabilidades
-* Classes e objetos
-* Encapsulamento
-* Validação de dados
-* Tratamento de eventos
-* Interfaces gráficas
-* Organização em pacotes
-* Compilação e geração de executáveis Java
-
----
-
-## 📚 Objetivo acadêmico
-
-Este projeto foi desenvolvido como forma de **praticar Java e desenvolvimento de aplicações desktop**, colocando em prática conceitos aprendidos durante os estudos de **Desenvolvimento de Sistemas**.
-
-Além do cálculo em si, o projeto busca demonstrar a utilização de **Java Swing para criação de interfaces gráficas** e uma estrutura de código organizada entre diferentes camadas.
+* Object-Oriented Programming
+* Separation of responsibilities
+* Classes and objects
+* Encapsulation
+* Data validation
+* Event handling
+* Graphical User Interfaces
+* Package organization
+* Java compilation and executable generation
 
 ---
 
-## ⚠️ Observação
+## 📚 Academic Purpose
 
-Os valores apresentados pela aplicação são **estimativas** e possuem finalidade educacional. O resultado não deve ser utilizado como substituto de avaliação ou orientação de um profissional de saúde.
+This project was developed as a way to **practice Java and desktop application development**, applying concepts learned throughout my studies in **Systems Development**.
 
----
-
-## 👨‍💻 Desenvolvedor
-
-Desenvolvido por **Anderson**.
-
-Projeto criado para fins de estudo, aprendizado e portfólio.
+Beyond the calculation itself, the project demonstrates the use of **Java Swing for building graphical interfaces** and an organized code structure divided into different responsibilities.
 
 ---
 
-⭐ Se este projeto foi útil ou interessante para você, considere deixar uma estrela no repositório!
+## ⚠️ Disclaimer
+
+The values provided by the application are **estimates** and are intended for educational purposes only. The results should not be used as a substitute for professional medical or nutritional evaluation.
+
+---
+
+## 👨‍💻 Developer
+
+Developed by **Anderson Melo do Nascimento**.
+
+This project was created for **learning, practice, and portfolio purposes**.
+
+---
+
+⭐ If you found this project useful or interesting, consider giving the repository a star!
